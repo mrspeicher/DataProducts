@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n\nlibrary(shiny)\n\nweightrisk.RSV <- function(weight) as.numeric(weight)\nmonthrisk.RSV <- function(month) as.numeric(month)\nsibrisk.RSV <- function(sibs) as.numeric(sibs) * 2\neducationrisk.RSV <- function(education) as.numeric(education)\n\nshinyServer(\n  function(input, output) {\n  \n  output$month <- renderPrint({ input$month })\n  output$weight <- renderPrint({ input$weight })\n  output$sibs <- renderPrint({ input$sibs })\n  output$education <- renderPrint({ input$education })\n  output$weightrisk.RSV <- renderPrint({ weightrisk.RSV(input$weight) })\n  output$monthrisk.RSV <- renderPrint({ monthrisk.RSV(input$month) })\n  output$sibrisk.RSV <- renderPrint({ sibrisk.RSV(input$sibs) })\n  output$educationrisk.RSV <- renderPrint({ educationrisk.RSV(input$education )})\n})",
+    "created" : 1419131075539.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1515047812",
+    "id" : "73E8E330",
+    "lastKnownWriteTime" : 1419191898,
+    "path" : "~/Coursera/R/DataProducts/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

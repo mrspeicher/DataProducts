@@ -1,0 +1,17 @@
+{
+    "contents" : "myrisk <- id1 + id2 + id3 + id4\nif(myrisk < '4'){\n    risk.RSV <- '16.8%'\n} else {\n  if(myrisk=='4'){\n    risk.RSV <- '23.4%'\n  } else {\n    risk.RSV <- '32.0%'\n  }\n}",
+    "created" : 1419137626737.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1205396235",
+    "id" : "6194350A",
+    "lastKnownWriteTime" : 1419142281,
+    "path" : "~/Coursera/R/DataProducts/RSVfunction.R",
+    "project_path" : "RSVfunction.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

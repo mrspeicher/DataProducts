@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n\nlibrary(shiny)\n\nshinyUI(pageWithSidebar(\n  headerPanel(\"What is the risk that your child has RSV?\"),\n\nsidebarPanel(\n  checkboxInput(\"month\", label = \"Born between April 1 and September 30\", value = FALSE),\n  checkboxInput(\"weight\", label = \"Birthweight >= 8.18 pounds (4.5 kg)\", value = FALSE),\n  checkboxInput(\"sibs\", label = \"Has siblings (<= age 18) living in the home or has gone to day care in the past year\", value = FALSE),\n  checkboxInput(\"education\", label = \"At least one parent has earned a Bachelor's degree or higher\", value = FALSE)\n),\n\nmainPanel(\n  p('In a 2011 article in the journal Pediatrics (127:1, 35-41) Houben et al. published a scoring system to determine \n    a child’s risk for hospitalized respiratory syncytial virus (RSV) lower respiratory tract infection (LRTI), a \n    common infection in children seen in outpatient offices. You can determine a child’s risk for the disease by \n    answering these questions. If your total risk points are <4, the child has a 16.8% chance of developing RSV; \n    if risk points = 4, a 23.4% chance; and if >4, a 32% chance.'),\n  p('For birthmonth between April and September, you responded'),\n  verbatimTextOutput('month'),\n  p('For birthweight >= 8.18 pounds, you responded'),\n  verbatimTextOutput('weight'),\n  p('For living with siblings or attending daycare, you responded'),\n  verbatimTextOutput('sibs'),\n  p('For parent educational attainment of undergraduate degree or higher, you responded'),\n  verbatimTextOutput('education'),\n  p('Based on these responses, risk points for birth month is'),\n  verbatimTextOutput('monthrisk.RSV'),\n  p('Based on these responses, risk points for birthweight is'),\n  verbatimTextOutput('weightrisk.RSV'),\n  p('Based on these responses, risk points for proximity to other children is'),\n  verbatimTextOutput('sibrisk.RSV'),\n  p('Based on these responses, risk points for parental educational achievement is'),\n  verbatimTextOutput('educationrisk.RSV')\n)\n))\n",
+    "created" : 1419163507069.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3155444191",
+    "id" : "6DAF0FFC",
+    "lastKnownWriteTime" : 1419191944,
+    "path" : "~/Coursera/R/DataProducts/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
